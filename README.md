@@ -4,24 +4,23 @@ Objetivo:
 Desarrollar una API en GraphQL que permita la gestión de análisis financiero y validación de datos en línea, utilizando diversas APIs externas.
 
 **Colecciones**:
-Usuarios: Contiene la información de los usuarios que pueden acceder a la plataforma.
+- Usuarios: Contiene la información de los usuarios que pueden acceder a la plataforma.
+- Consultas Financieras: Registra las búsquedas y análisis de datos financieros realizados por los usuarios.
+- Consultas de Seguridad Web: Almacena los análisis de seguridad y validaciones en línea ejecutadas por los usuarios.
 
-Consultas Financieras: Registra las búsquedas y análisis de datos financieros realizados por los usuarios.
+**Resolvers**:
 
-Consultas de Seguridad Web: Almacena los análisis de seguridad y validaciones en línea ejecutadas por los usuarios.
+**addUser**
+- Parámetros:
 
-Resolvers:
-addUser
-Parámetros:
-
-Nombre completo (ej. "Carlos Martínez")
-Correo electrónico (ej. "carlos.martinez@example.com")
-Número de teléfono con prefijo nacional (ej. "+34645543345")
-Tipo de usuario (ej. "Analista", "Inversor", "Administrador")
-Devuelve:
-
-El usuario recién creado con su ID.
-getCryptoPrice (Consulta el precio de criptomonedas)
+        Nombre completo (ej. "Carlos Martínez")
+        Correo electrónico (ej. "carlos.martinez@example.com")
+        Número de teléfono con prefijo nacional (ej. "+34645543345")
+        Tipo de usuario (ej. "Analista", "Inversor", "Administrador")
+  
+        Devuelve:El usuario recién creado con su ID.
+  
+**getCryptoPrice (Consulta el precio de criptomonedas)**
 Parámetros:
 
 Nombre de la criptomoneda (ej. "Bitcoin")
