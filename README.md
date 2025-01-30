@@ -23,48 +23,48 @@ Desarrollar una API en GraphQL que permita la gestión de análisis financiero y
 **getCryptoPrice (Consulta el precio de criptomonedas)**
 Parámetros:
 
-Nombre de la criptomoneda (ej. "Bitcoin")
-Devuelve:
+        Nombre de la criptomoneda (ej. "Bitcoin")
+        Devuelve:
+        
+        Precio actual en USD.
+        Variación en las últimas 24 horas.
+        Usa la API: Crypto Price
 
-Precio actual en USD.
-Variación en las últimas 24 horas.
-Usa la API: Crypto Price
+**getStockPrice (Consulta el precio de una acción)**
+        Parámetros:
+        
+        Símbolo bursátil (ej. "AAPL" para Apple)
+        Devuelve:
+        
+        Precio actual.
+        Variación en porcentaje.
+        Usa la API: Stock Price
 
-getStockPrice (Consulta el precio de una acción)
-Parámetros:
+**getGoldPrice (Consulta el precio del oro)**
+        Devuelve:
+        
+        Precio actual en USD por onza.
+        Usa la API: Gold Price
+        
+        convertCurrency (Conversión de divisas)
+        Parámetros:
+        
+        Cantidad (ej. 1000)
+        Moneda de origen (ej. "USD")
+        Moneda de destino (ej. "EUR")
+        Devuelve:
+        
+        Monto convertido.
+        Usa la API: Convert Currency
 
-Símbolo bursátil (ej. "AAPL" para Apple)
-Devuelve:
-
-Precio actual.
-Variación en porcentaje.
-Usa la API: Stock Price
-
-getGoldPrice (Consulta el precio del oro)
-Devuelve:
-
-Precio actual en USD por onza.
-Usa la API: Gold Price
-
-convertCurrency (Conversión de divisas)
-Parámetros:
-
-Cantidad (ej. 1000)
-Moneda de origen (ej. "USD")
-Moneda de destino (ej. "EUR")
-Devuelve:
-
-Monto convertido.
-Usa la API: Convert Currency
-
-validateEmail (Validación de correo electrónico)
-Parámetros:
-
-Correo electrónico a validar (ej. "user@example.com")
-Devuelve:
-
-true si es válido, false si es inválido.
-Usa la API: Validate Email
+**validateEmail (Validación de correo electrónico)**
+        Parámetros:
+        
+        Correo electrónico a validar (ej. "user@example.com")
+        Devuelve:
+        
+        true si es válido, false si es inválido.
+        Usa la API: Validate Email
 
 validatePhone (Validación de número telefónico)
 Parámetros:
