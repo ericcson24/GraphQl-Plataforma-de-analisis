@@ -21,7 +21,7 @@ Desarrollar una API en GraphQL que permita la gestión de análisis financiero y
         Devuelve:El usuario recién creado con su ID.
   
 **getCryptoPrice (Consulta el precio de criptomonedas)**
-Parámetros:
+- Parámetros:
 
         Nombre de la criptomoneda (ej. "Bitcoin")
         Devuelve:
@@ -31,7 +31,7 @@ Parámetros:
         Usa la API: Crypto Price
 
 **getStockPrice (Consulta el precio de una acción)**
-        Parámetros:
+- Parámetros:
         
         Símbolo bursátil (ej. "AAPL" para Apple)
         Devuelve:
@@ -41,13 +41,13 @@ Parámetros:
         Usa la API: Stock Price
 
 **getGoldPrice (Consulta el precio del oro)**
-        Devuelve:
+- Devuelve:
         
         Precio actual en USD por onza.
         Usa la API: Gold Price
         
-        convertCurrency (Conversión de divisas)
-        Parámetros:
+**convertCurrency (Conversión de divisas)**
+- Parámetros:
         
         Cantidad (ej. 1000)
         Moneda de origen (ej. "USD")
@@ -58,7 +58,7 @@ Parámetros:
         Usa la API: Convert Currency
 
 **validateEmail (Validación de correo electrónico)**
-        Parámetros:
+- Parámetros:
         
         Correo electrónico a validar (ej. "user@example.com")
         Devuelve:
@@ -66,50 +66,50 @@ Parámetros:
         true si es válido, false si es inválido.
         Usa la API: Validate Email
 
-validatePhone (Validación de número telefónico)
-Parámetros:
+**validatePhone (Validación de número telefónico)**
+- Parámetros:
 
-Número telefónico con prefijo internacional (ej. "+34645543345")
-Devuelve:
+        Número telefónico con prefijo internacional (ej. "+34645543345")
+        Devuelve:
+        
+        true si es válido, false si es inválido.
+        Usa la API: Validate Phone
 
-true si es válido, false si es inválido.
-Usa la API: Validate Phone
+**ipLookup (Consulta de dirección IP)**
+- Parámetros:
+        
+        Dirección IP (ej. "192.168.1.1")
+        Devuelve:
+        
+        Ubicación geográfica de la IP.
+        Nombre del proveedor de servicios de internet (ISP).
+        Usa la API: IP Lookup
 
-ipLookup (Consulta de dirección IP)
-Parámetros:
+**getDomainInfo (Consulta de información sobre un dominio)**
+- Parámetros:
 
-Dirección IP (ej. "192.168.1.1")
-Devuelve:
+        Nombre de dominio (ej. "example.com")
+        Devuelve:
+        
+        Información de registro del dominio.
+        Estado del dominio.
+        Usa la API: Domain
 
-Ubicación geográfica de la IP.
-Nombre del proveedor de servicios de internet (ISP).
-Usa la API: IP Lookup
-
-getDomainInfo (Consulta de información sobre un dominio)
-Parámetros:
-
-Nombre de dominio (ej. "example.com")
-Devuelve:
-
-Información de registro del dominio.
-Estado del dominio.
-Usa la API: Domain
-
-deleteUser
+**deleteUser**
 Parámetro:
 
-ID del usuario.
-Devuelve:
+        ID del usuario.
+        Devuelve:
+        
+        true o false según si el usuario se ha eliminado correctamente.
+**updateUser**
+- Parámetros:
 
-true o false según si el usuario se ha eliminado correctamente.
-updateUser
-Parámetros:
-
-ID del usuario.
-Nuevos datos (nombre, teléfono, correo electrónico).
-Devuelve:
-
-Los datos actualizados del usuario.
+        ID del usuario.
+        Nuevos datos (nombre, teléfono, correo electrónico).
+        Devuelve:
+        
+        Los datos actualizados del usuario.
 Notas:
 Se debe validar el número de teléfono y el correo electrónico usando las APIs correspondientes antes de registrarlo en la base de datos.
 Un usuario solo puede realizar un número limitado de consultas diarias (configurable en la base de datos).
