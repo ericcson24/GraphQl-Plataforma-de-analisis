@@ -1,0 +1,1 @@
+# GraphQl-Plataforma-de-analisis
